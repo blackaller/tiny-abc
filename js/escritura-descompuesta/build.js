@@ -27,9 +27,9 @@ function init() {
 	paragraphs.forEach ( function ( paragraph ){
 		var p = document.createElement( 'p' );
     	content.appendChild( p );
-    	//p.innerText = paragraph;
-    	//p.innerText = scramble(paragraph, "sentences");
-    	p.innerText = sort(paragraph, "sentences");
+    	p.innerText = paragraph;
+    	p.innerText = scramble(paragraph, "words");
+    	//p.innerText = sort(paragraph, "sentences");
     	console.log( "CHARACTERS: " + p.innerText.length + " — WORDS: " + p.innerText.split(" ").length );
 	});
 	document.body.appendChild( content );
