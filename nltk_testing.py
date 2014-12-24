@@ -16,7 +16,7 @@ my_tokens = word_tokenize(my_text)
 # my_file = open(my_path, 'rU')
 # my_text = my_file.read()
 # print my_text
-my_tokens = word_tokenize(my_text.decode('utf-8'))
+# my_tokens = word_tokenize(my_text.decode('utf-8'))
 
 
 len(my_tokens)
