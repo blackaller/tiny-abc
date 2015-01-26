@@ -7,9 +7,9 @@ from urllib import urlopen
 ## get text from URL
 my_url = 'https://raw.githubusercontent.com/blackaller/tiny-abc/master/txt/escritura-descompuesta.txt' # path to file online
 response = urlopen(my_url)
-my_text = response.read().decode('utf8')
+my_text = response.read()
 # print my_text
-my_tokens = word_tokenize(my_text)
+my_tokens = word_tokenize(my_text.decode('utf-8'))
 
 ## get text from local file
 # my_path = 'txt/escritura-descompuesta.txt' ## path to file
